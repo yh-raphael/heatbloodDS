@@ -18,7 +18,7 @@ typedef struct _linkedList
 	Node* cur;
 	Node* before;
 	int numOfData;
-	int(*comp)(LData d1, LData d2);
+	int(*comp)(LData d1, LData d2);	// SetSortRule 함수를 통해서 전달된 함수정보를 저장하기 위한 멤버.
 } LinkedList;
 
 typedef LinkedList List;
@@ -32,6 +32,6 @@ int LNext(List* plist, LData* pdata);
 LData LRemove(List* plist);
 int LCount(List* plist);
 
-void SetSortRule(List* plist, int(*comp)(LData d1, LData d2));
+void SetSortRule(List* plist, int(*comp)(LData d1, LData d2));	// 정렬 기준이 되는 함수를 등록하는 함수.
 
 #endif

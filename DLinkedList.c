@@ -23,7 +23,19 @@ void FInsert(List* plist, LData data)
 
 void SInsert(List* plist, LData data)
 {
-	//잠시 후에 소개하고 설명합니니다.
+	Node* newNode = (Node*)malloc(sizeof(Node));	// 새 노드의 생성.
+	Node* pred = plist->head;						// pred는 더미 노드를 가리킴.
+	newNode->data = data;							// 새 노드에 데이터 저장.
+
+	// 새 노드가 들어갈 위치를 찾기 위한 반복문!
+	while (pred->next != NULL && plist->comp(data, pred->next->data) != 0)
+	{
+		pred = pred->next;
+	}
+	newNode->next = pred->next;
+	pred->next = newNode;
+
+	(plist->numOfData)++;
 }
 
 void LInsert(List* plist, LData data)
@@ -78,5 +90,5 @@ int LCount(List* plist)
 
 void SetSortRule(List* plist, int (*comp)(LData d1, LData d2))
 {
-	// 잠시 후 소개하고 설명합니다.
+	plist->comp = comp;
 }

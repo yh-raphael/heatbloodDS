@@ -23,7 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DLinkedList.c" />
-    <ClCompile Include="DLinkedListMain.c" />
+    <ClCompile Include="DLinkedListSortMain.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
