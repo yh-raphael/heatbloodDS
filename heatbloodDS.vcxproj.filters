@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DLinkedList.h">
+    <ClInclude Include="CLinkedList.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DLinkedList.c">
+    <ClCompile Include="CLinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DLinkedListSortMain.c">
+    <ClCompile Include="CLinkedListMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
