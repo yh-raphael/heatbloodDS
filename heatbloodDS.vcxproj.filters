@@ -21,6 +21,12 @@
     <ClInclude Include="PostCalculator.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="InfixToPostfix.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InfixCalculator.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ListBaseStack.c">
@@ -29,7 +35,13 @@
     <ClCompile Include="PostCalculator.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PostCalculatorMain.c">
+    <ClCompile Include="InfixToPostfix.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InfixCalculator.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InfixCalculatorMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
